@@ -1,0 +1,416 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero {
+    background: #cb5dbb;
+    color: #100606;
+    text-align: center;
+    padding: 35px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .event-card {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .event-card {
+        padding: 15px;
+    }
+}
+.events {
+    padding: 20px;
+    text-align: center;
+}
+
+.event-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.event-image {
+    width: 100%;
+    height: 200px
+    object-fit: cover;
+}
+
+.event-details {
+    padding: 20px;
+}
+
+.event-title {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.event-date {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.event-description {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.event-btn {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.event-btn:hover {
+    background-color: #218838;
+}
+
+.contact {
+    padding: 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.about-us {
+    padding: 40px 20px;
+    background-color:#cadcdc;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 3rem;
+    font-style;
+    color: #ce1d8a;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #1c1c62;
+    max-width: 800px;
+    margin: 0 auto 15px;
+}
+.schedule-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.schedule-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.schedule-table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #e8f5fe;
+}
+
+.schedule-table th {
+    font-weight: bold;
+}
+
+.schedule-table td {
+    font-size: 0.95rem;
+    color: #333;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.event-highlight {
+    text-align: center;
+    color: #333;
+}
+
+.event-banner {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.register-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e91e63;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #c2185b;
+}
+
+.event-details {
+    padding: 20px ;
+    background-color: #f5f5f5;
+}
+
+.event-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.highlight-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.highlight-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.highlight-card h3 {
+    font-size: 1.5rem;
+    color: #e91e63;
+    margin: 10px 0;
+}
+
+.highlight-card p {
+    padding: 0 15px 20px 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+.speakers {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+.speakers h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.speaker-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.speaker-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.speaker-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.speaker-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.speaker-card p {
+    color: #555;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+
